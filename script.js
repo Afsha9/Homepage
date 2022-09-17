@@ -12,7 +12,7 @@ function getNumberOrString(value) {
 
 document.getElementById('button1').addEventListener('click', (event) => {
   let element_text = document.getElementById('text1');
-  window.speechSynthesis.speak(new SpeechSynthesisUtterance(getNumberOrString(document.getElementById('text').value)));
+  window.speechSynthesis.speak(new SpeechSynthesisUtterance(getNumberOrString(document.getElementById('text1').value)));
 
 });
 
