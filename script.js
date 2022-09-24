@@ -43,7 +43,7 @@ document.getElementById('button2').addEventListener('click', (event) => {
 var address, names, item;
 
 
-address = ['www.codeyourfuture.io', 'https://www.pinterest.co.uk/', 'www.youtube.com'];
+address = ['https://www.codeyourfuture.io', 'https://www.pinterest.co.uk/', 'https://www.youtube.com'];
 names = ['Code Your Future', 'Pinterest', 'YouTube'];
 address.forEach((item) => {
   while (!!names.length) {
