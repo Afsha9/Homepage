@@ -40,4 +40,25 @@ document.getElementById('button2').addEventListener('click', (event) => {
 });
 
 
+var address, names, item;
+
+
+address = ['www.codeyourfuture.io', 'https://www.pinterest.co.uk/', 'www.youtube.com'];
+names = ['Code Your Future', 'Pinterest', 'YouTube'];
+address.forEach((item) => {
+  while (!!names.length) {
+    if(--window.LoopTrap <= 0) throw "Infinite loop.";
+    let element_sites = document.getElementById('sites');
+    let new_li = document.createElement('li');
+    let new_a = document.createElement('a');
+    new_a.innerText = names.shift();
+    new_a.setAttribute("href", address.shift());
+
+    new_li.appendChild(new_a);
+
+    element_sites.appendChild(new_li);
+  }
+});
+
+
 
