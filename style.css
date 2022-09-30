@@ -1,12 +1,13 @@
-ul {
+/* ul {
   text-align: right;
-}
+} */
 
 .list1 {
   text-align: right;
 }
 
 div {
+  text-align: right;
   list-style-type: none;
   background: #c0e0b5;
   display: inline-block;
