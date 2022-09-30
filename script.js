@@ -1,4 +1,36 @@
 
+var projects, item;
+
+
+projects = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
+
+
+document.getElementById('open').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  element_list.replaceChildren();
+  projects.forEach((item) => {
+    let element_list2 = document.getElementById('list');
+    let new_li = document.createElement('li');
+    new_li.innerText = item;
+
+    element_list2.appendChild(new_li);
+  });
+  let element_open = document.getElementById('open');
+  element_open.innerText = 'X';
+
+  element_open.addEventListener('click', (event) => {
+    let element_list3 = document.getElementById('list');
+    element_list3.replaceChildren();
+
+  });
+});
+
+
+
+
+
+
+
 var images;
 
 
