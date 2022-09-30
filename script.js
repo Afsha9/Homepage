@@ -41,6 +41,8 @@ document.getElementById('button1').addEventListener('click', (event) => {
 
 
 
+
+
 function getNumberOrString(value) {
   // Convert a string value to a number if possible
   let number_value = Number(value);
@@ -83,5 +85,5 @@ address.forEach((item) => {
   }
 });
 
-
+console.log("Hello World");
 
