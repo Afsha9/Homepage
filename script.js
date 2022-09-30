@@ -43,8 +43,8 @@ document.getElementById('button2').addEventListener('click', (event) => {
 var address, names, item;
 
 
-address = ['https://www.codeyourfuture.io', 'https://www.pinterest.co.uk/', 'https://www.youtube.com'];
-names = ['Code Your Future', 'Pinterest', 'YouTube'];
+address = ['www.linkedin.com/in/afsha-hossain', 'https://www.instagram.com/unityofbeing/', 'https://www.pinterest.co.uk/QueenFInterests/'];
+names = ['LinkedIn', 'Instagram', 'Pinterest'];
 address.forEach((item) => {
   while (!!names.length) {
     if(--window.LoopTrap <= 0) throw "Infinite loop.";
