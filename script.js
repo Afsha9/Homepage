@@ -42,7 +42,6 @@ document.getElementById('button1').addEventListener('click', (event) => {
 
 
 
-
 function getNumberOrString(value) {
   // Convert a string value to a number if possible
   let number_value = Number(value);
@@ -55,14 +54,20 @@ function getNumberOrString(value) {
 
 
 
-document.getElementById('button2').addEventListener('click', (event) => {
-  let element_list = document.getElementById('list');
+document.getElementById('button_submit').addEventListener('click', (event) => {
+  let element_display = document.getElementById('display');
   let new_li = document.createElement('li');
-  new_li.innerText = getNumberOrString(document.getElementById('text2').value);
+  new_li.innerText = getNumberOrString(document.getElementById('name_user').value);
 
-  element_list.appendChild(new_li);
+  element_display.appendChild(new_li);
+  let new_div = document.createElement('div');
+  new_div.innerText = getNumberOrString(document.getElementById('feedback').value);
+
+  element_display.appendChild(new_div);
 
 });
+
+
 
 
 var address, names, item;
