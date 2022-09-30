@@ -1,8 +1,8 @@
-/* ul {
-  text-align: right;
-} */
+ul {
+  text-align: left;
+}
 
-.list1 {
+.open {
   text-align: right;
 }
 
