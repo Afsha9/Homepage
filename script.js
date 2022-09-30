@@ -21,23 +21,25 @@ document.getElementById('button_next').addEventListener('click', (event) => {
 
 });
 
-function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value
-  } else {
-    return number_value
-  }
-}
+
+
+// function getNumberOrString(value) {
+//   // Convert a string value to a number if possible
+//   let number_value = Number(value);
+//   if (Number.isNaN(number_value)) {
+//     return value
+//   } else {
+//     return number_value
+//   }
+// }
 
 
 
-document.getElementById('button1').addEventListener('click', (event) => {
-  let element_text = document.getElementById('text1');
-  window.speechSynthesis.speak(new SpeechSynthesisUtterance(getNumberOrString(document.getElementById('text1').value)));
+// document.getElementById('button1').addEventListener('click', (event) => {
+//   let element_text = document.getElementById('text1');
+//   window.speechSynthesis.speak(new SpeechSynthesisUtterance(getNumberOrString(document.getElementById('text1').value)));
 
-});
+// });
 
 
 
