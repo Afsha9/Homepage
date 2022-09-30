@@ -2,12 +2,12 @@ ul {
   text-align: left;
 }
 
-.list1 {
+.open {
   text-align: right;
 }
 
 div {
-  text-align: center;
+ 
   list-style-type: none;
   background: #c0e0b5;
   display: inline-block;
