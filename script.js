@@ -107,22 +107,23 @@ document.getElementById('button_submit').addEventListener('click', (event) => {
 var address, names, item;
 
 
-address = ['https://www.linkedin.com/in/afsha-hossain', 'https://www.instagram.com/unityofbeing/', 'https://www.pinterest.co.uk/QueenFInterests/'];
+address = ['www.linkedin.com/in/afsha-hossain', 'https://www.instagram.com/unityofbeing/', 'https://www.pinterest.co.uk/QueenFInterests/'];
 names = ['LinkedIn', 'Instagram', 'Pinterest'];
 address.forEach((item) => {
   while (!!names.length) {
     if(--window.LoopTrap <= 0) throw "Infinite loop.";
     let element_sites = document.getElementById('sites');
-    let new_li = document.createElement('li');
+    let new_div = document.createElement('div');
     let new_a = document.createElement('a');
     new_a.innerText = names.shift();
     new_a.setAttribute("href", address.shift());
 
-    new_li.appendChild(new_a);
+    new_div.appendChild(new_a);
 
-    element_sites.appendChild(new_li);
+    element_sites.appendChild(new_div);
   }
 });
 
-console.log("Hello World");
+
+
 
