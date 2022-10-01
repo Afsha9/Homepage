@@ -33,27 +33,57 @@ document.getElementById('open').addEventListener('click', (event) => {
 
 // Image Carousel
 
+
 var images;
 
 
-images = ['https://pixfeeds.com/images/topic/4912/1200-4912-ballroom-dancing-photo1.jpg', 'https://img.xcitefun.net/users/2014/07/361484,xcitefun-nature-color-9.jpg', 'https://img77.uenicdn.com/image/upload/v1542103697/category/shutterstock_630509456.jpg'];
+images = ['https://pixfeeds.com/images/topic/4912/1200-4912-ballroom-dancing-photo1.jpg', 'https://img.tpt.cloud/nextavenue/uploads/2017/07/Entering-the-Competitive-World-of-Ballroom-Dancing.inside.1200x776.jpg', 'https://img77.uenicdn.com/image/upload/v1542103697/category/shutterstock_630509456.jpg', 'https://easyspoonfuls.com/wp-content/uploads/Depositphotos_202166314_l-2015-e1538072494210.jpg', 'http://wallup.net/wp-content/uploads/2016/02/18/254908-park-nature-Serbia.jpg', 'https://img.xcitefun.net/users/2014/07/361484,xcitefun-nature-color-9.jpg'];
 let element_photos = document.getElementById('photos');
 element_photos.setAttribute("src", images[0]);
 
 
 document.getElementById('button_previous').addEventListener('click', (event) => {
+
+});
+
+document.getElementById('button_previous').addEventListener('click', (event) => {
   let element_photos2 = document.getElementById('photos');
-  images.unshift(images.slice(-1)[0]);
-  element_photos2.setAttribute("src", images.pop());
+  images.unshift(images.pop());
+  element_photos2.setAttribute("src", images.slice(-1)[0]);
 
 });
 
 document.getElementById('button_next').addEventListener('click', (event) => {
   let element_photos3 = document.getElementById('photos');
-  images.push(images[0]);
-  element_photos3.setAttribute("src", images.shift());
+  images.push(images.shift());
+  element_photos3.setAttribute("src", images[0]);
 
 });
+
+
+
+
+// var images;
+
+
+// images = ['https://pixfeeds.com/images/topic/4912/1200-4912-ballroom-dancing-photo1.jpg', 'https://img.xcitefun.net/users/2014/07/361484,xcitefun-nature-color-9.jpg', 'https://img77.uenicdn.com/image/upload/v1542103697/category/shutterstock_630509456.jpg'];
+// let element_photos = document.getElementById('photos');
+// element_photos.setAttribute("src", images[0]);
+
+
+// document.getElementById('button_previous').addEventListener('click', (event) => {
+//   let element_photos2 = document.getElementById('photos');
+//   images.unshift(images.slice(-1)[0]);
+//   element_photos2.setAttribute("src", images.pop());
+
+// });
+
+// document.getElementById('button_next').addEventListener('click', (event) => {
+//   let element_photos3 = document.getElementById('photos');
+//   images.push(images[0]);
+//   element_photos3.setAttribute("src", images.shift());
+
+// });
 
 
 
