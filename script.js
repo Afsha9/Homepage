@@ -1,4 +1,6 @@
 
+// Hamburger Project
+
 var projects, item;
 
 
@@ -29,7 +31,7 @@ document.getElementById('open').addEventListener('click', (event) => {
 
 
 
-
+// Image Carousel
 
 var images;
 
@@ -55,26 +57,10 @@ document.getElementById('button_next').addEventListener('click', (event) => {
 
 
 
-// function getNumberOrString(value) {
-//   // Convert a string value to a number if possible
-//   let number_value = Number(value);
-//   if (Number.isNaN(number_value)) {
-//     return value
-//   } else {
-//     return number_value
-//   }
-// }
 
 
 
-// document.getElementById('button1').addEventListener('click', (event) => {
-//   let element_text = document.getElementById('text1');
-//   window.speechSynthesis.speak(new SpeechSynthesisUtterance(getNumberOrString(document.getElementById('text1').value)));
-
-// });
-
-
-
+// Commenting Project
 
 function getNumberOrString(value) {
   // Convert a string value to a number if possible
@@ -94,15 +80,16 @@ document.getElementById('button_submit').addEventListener('click', (event) => {
   new_li.innerText = getNumberOrString(document.getElementById('name_user').value);
 
   element_display.appendChild(new_li);
-  let new_div = document.createElement('div');
-  new_div.innerText = getNumberOrString(document.getElementById('feedback').value);
+  let new_span = document.createElement('span');
+  new_span.innerText = getNumberOrString(document.getElementById('feedback').value);
 
-  element_display.appendChild(new_div);
+  element_display.appendChild(new_span);
 
 });
 
 
 
+// Projects related to links
 
 var address, names, item;
 
