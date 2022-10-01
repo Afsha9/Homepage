@@ -124,7 +124,7 @@ document.getElementById('button_submit').addEventListener('click', (event) => {
 var address, names, item;
 
 
-address = ['https://www.linkedin.com/in/afsha-hossain', 'https://www.instagram.com/unityofbeing/', 'https://www.pinterest.co.uk/QueenFInterests/'];
+address = ['https:/www.linkedin.com/in/afsha-hossain', 'https://www.instagram.com/unityofbeing/', 'https://www.pinterest.co.uk/QueenFInterests/'];
 names = ['LinkedIn', 'Instagram', 'Pinterest'];
 address.forEach((item) => {
   while (!!names.length) {
