@@ -137,7 +137,7 @@ address.forEach((item) => {
 
     new_div.appendChild(new_a);
 
-    element_sites.appendChild(new_div);
+//     element_sites.appendChild(new_div);
   }
 });
 
