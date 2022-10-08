@@ -63,32 +63,6 @@ document.getElementById('button_next').addEventListener('click', (event) => {
 
 
 
-// var images;
-
-
-// images = ['https://pixfeeds.com/images/topic/4912/1200-4912-ballroom-dancing-photo1.jpg', 'https://img.xcitefun.net/users/2014/07/361484,xcitefun-nature-color-9.jpg', 'https://img77.uenicdn.com/image/upload/v1542103697/category/shutterstock_630509456.jpg'];
-// let element_photos = document.getElementById('photos');
-// element_photos.setAttribute("src", images[0]);
-
-
-// document.getElementById('button_previous').addEventListener('click', (event) => {
-//   let element_photos2 = document.getElementById('photos');
-//   images.unshift(images.slice(-1)[0]);
-//   element_photos2.setAttribute("src", images.pop());
-
-// });
-
-// document.getElementById('button_next').addEventListener('click', (event) => {
-//   let element_photos3 = document.getElementById('photos');
-//   images.push(images[0]);
-//   element_photos3.setAttribute("src", images.shift());
-
-// });
-
-
-
-
-
 
 // Commenting Project
 
