@@ -17,6 +17,8 @@ div {
   height: 30px;
   width: 110px;
   text-justify: center;
+  text-align: center;
+  font-size: 18px;
   border-radius: 10px;
 }
 
